@@ -19,7 +19,7 @@ public class Comment {
     private Long id;
     private String content;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany
     @JoinTable(name = "comment_smile", 
             joinColumns = @JoinColumn(name = "comment_id"), 
             inverseJoinColumns = @JoinColumn(name = "smile_id")
