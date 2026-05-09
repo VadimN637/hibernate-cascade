@@ -259,6 +259,6 @@ public class CommentDaoImplTest extends AbstractTest {
 
     @Override
     protected Class<?>[] entities() {
-        return new Class[]{Comment.class, Smile.class};
+        return new Class[]{Comment.class, Smile.class, User.class};
     }
 }
